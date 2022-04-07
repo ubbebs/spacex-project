@@ -1,0 +1,44 @@
+.deal {
+    width: 100%;
+    height: auto;
+    background-color: var(--clr-blue);
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 1s;
+    z-index: -1;
+}
+
+.deal > p {
+    width: auto;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.deal-p {
+    color: var(--clr-white);
+    transition: 1s;
+}
+
+.p_link {
+    display: inline-block;
+}
+
+.p_after::after {
+    content: " >";
+    font-size: 0.75rem;
+    padding-left: 0.05rem;
+}
+
+a.p_link:link, a.p_link:visited {
+    color: var(--clr-white);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.p_link:hover {
+    color: var(--clr-blue);
+    text-decoration: underline;
+}

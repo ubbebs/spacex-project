@@ -1,0 +1,81 @@
+:root {
+    --clr-black: #000;
+    --clr-black1: #1d1d1f;
+    --clr-black2: #4d4d4f;
+    --clr-white: #fff;
+    --clr-gray: #bbb;
+    --clr-gray2: #eee;
+    --clr-blue: #338bff;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: sfpro;
+    src: url('../font/sfpro.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-white);
+    font-family: "sfpro", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+
+nav, section {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-black2);
+    border: none;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap {
+    gap: 1.25rem;
+}
+
+.nborder {
+    border: none!important;
+}
+
+.header {
+    height: 44px;
+}
