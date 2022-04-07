@@ -1,4 +1,83 @@
+:root {
+    --div-height: 100vh;
+}
+
 .main {
+    position: relative;
+    height: var(--div-height);
+    width: 100%;
+}
+
+.main-video {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+#main-video {
+    display: block;
+    width: 2560px;
+    max-height: var(--div-height);
+}
+
+.main-background {
+    position: absolute;
+    background-image: url("https://www.apple.com/v/iphone-13-pro/f/images/overview/hero/hero_endframe__3tq53uan9teq_large.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: contain;
+    width: 2560px;
+    height: var(--div-height);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.main-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    height: 900px;
+    width: 100%;
+    background-color: var(--clr-bg-black);
+}
+
+.main-home-content{
+    margin-top: 80px;
     height: auto;
     width: auto;
+    color: var(--clr-black);
+}
+
+.main-home-content-title {
+    font-size: 4rem;
+    margin: 0;
+    transition: opacity 1s;
+}
+
+.main-home-content-subtitle {
+    font-size: 5rem;
+    font-weight: bolder;
+    letter-spacing: -0.125rem;
+    padding: 0;
+    margin: 0.25rem;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@media (max-width: 1068px) {
+    #main-video {
+        width: 1068px;
+    }
+}
+
+@media (max-width: 1440px) {
+    #main-video {
+        width: 1440px;
+    }
 }

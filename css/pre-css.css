@@ -22,6 +22,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body > * {
+    overflow-y: hidden;
+}
+
 button {
     background: transparent;
     border: none;

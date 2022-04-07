@@ -10,7 +10,7 @@ function deal_color() {
 
 function deal_move() {
     deal.style.transform = "translateX(0)";
-    setTimeout(deal_color, 2000);
+    setTimeout(deal_color, 1300);
 }
 
 window.onload = deal_move();

@@ -1,86 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/pre-css.css">
-    <link rel="stylesheet" href="./css/header-css.css">
-    <link rel="stylesheet" href="./css/second-header-css.css">
-    <link rel="stylesheet" href="./css/deal.css">
-    <link rel="stylesheet" href="./css/main-home.css">
-    <script src="./js/header.js" defer></script>
-    <script src="./js/deal.js" defer></script>
-    <script src="./js/main-title.js" defer></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/pre-css.css">
+        <link rel="stylesheet" href="./css/header-css.css">
+        <link rel="stylesheet" href="./css/second-header-css.css">
+        <link rel="stylesheet" href="./css/deal.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="/js/header.js" defer></script>
+        <script src="./js/deal.js" defer></script>
+        <script src="./js/main-title.js" defer></script>
+    </head>
+    <body>
 
-    <header class="header flex">
-        <nav>
-            <!--desktop nav-->
-            <ul class="header-nav flex">
-                <li class="header-nav-logo flex-center">
-                    <img src="./img/apple-l.png" class="header-nav-logo-img" />
-                <li>
-                    <p>Store</p> 
-                <li>
-                    <p>Mac</p>
-                <li>
-                    <p>iPad</p>
-                <li>
-                    <p>iPhone</p>
-                <li>
-                    <p>Watch</p>
-                <li>
-                    <p>AirPods</p>
-                <li>
-                    <p>TV & Home</p>
-                <li>
-                    <p>Only on Apple</p>
-                <li>
-                    <p>Accessories</p>
-                <li>
-                    <p>Support</p>
-                <li class="header-nav-search flex-center">
-                    <img src="./img/loupe-l.png" class="header-nav-search-img" />
-                <li class="header-nav-chart flex-center">
-                    <img src="./img/bag-l.png" class="header-nav-chart-img" />
-            </ul>
-
-
-            <!--mobile nav-->
-            <div id="header-nav-m-box" class="header-nav-m-box" data-visible="false">
-                <div class="header-nav-m-bg"></div>
-                <div class="header-nav-m-box-result">
-                    <hr>
-                    <div class="header-nav-m-box-result-container">
-                        <p class="header-nav-m-box-result-container-title">Quick Links</p>
-                        <ul class="header-nav-m-box-result-container-list">
-                            <li class="nborder">
-                                <p>Res1</p>
-                            <li>
-                                <p>Res1</p>
-                            <li>
-                                <p>Res1</p>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header-nav-m-box-bar flex-center">
-                    <div class="header-nav-m-box-bar-search">
-                        <div class="header-nav-m-box-bar-search-cancel flex-center">
-                            <p>Cancel</p>
-                        </div>
-                        <div class="header-nav-m-box-bar-search-searchbar">
-                            <img src="./img/loupe-l.png" class="header-nav-m-box-bar-search-searchbar-loupe-img" />
-                            <input class="header-nav-m-box-bar-search-searchbar-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" role="combobox" aria-autocomplete="list">
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <ul class="header-nav-m-box-items flex-center">
-                    <li class="nborder">
-                        <p>Store</p>
+        <header class="header flex">
+            <nav>
+                <!--desktop nav-->
+                <ul class="header-nav gap flex">
+                    <li class="header-nav-logo flex-center">
+                        <img src="./img/apple-l.png" class="header-nav-logo-img" />
+                    <li>
+                        <p>Store</p> 
                     <li>
                         <p>Mac</p>
                     <li>
@@ -99,83 +42,140 @@
                         <p>Accessories</p>
                     <li>
                         <p>Support</p>
+                    <li class="header-nav-search flex-center">
+                        <img src="./img/loupe-l.png" class="header-nav-search-img" />
+                    <li class="header-nav-chart flex-center">
+                        <img src="./img/bag-l.png" class="header-nav-chart-img" />
+                </ul>
+
+
+                <!--mobile nav-->
+                <div id="header-nav-m-box" class="header-nav-m-box" data-visible="false">
+                    <div class="header-nav-m-bg"></div>
+                    <div class="header-nav-m-box-result">
+                        <hr>
+                        <div class="header-nav-m-box-result-container">
+                            <p class="header-nav-m-box-result-container-title">Quick Links</p>
+                            <ul class="header-nav-m-box-result-container-list">
+                                <li class="nborder">
+                                    <p>Res1</p>
+                                <li>
+                                    <p>Res1</p>
+                                <li>
+                                    <p>Res1</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-nav-m-box-bar flex-center">
+                        <div class="header-nav-m-box-bar-search">
+                            <div class="header-nav-m-box-bar-search-cancel flex-center">
+                                <p>Cancel</p>
+                            </div>
+                            <div class="header-nav-m-box-bar-search-searchbar">
+                                <img src="./img/loupe-l.png" class="header-nav-m-box-bar-search-searchbar-loupe-img" />
+                                <input class="header-nav-m-box-bar-search-searchbar-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" role="combobox" aria-autocomplete="list">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="header-nav-m-box-items flex-center">
+                        <li class="nborder">
+                            <p>Store</p>
+                        <li>
+                            <p>Mac</p>
+                        <li>
+                            <p>iPad</p>
+                        <li>
+                            <p>iPhone</p>
+                        <li>
+                            <p>Watch</p>
+                        <li>
+                            <p>AirPods</p>
+                        <li>
+                            <p>TV & Home</p>
+                        <li>
+                            <p>Only on Apple</p>
+                        <li>
+                            <p>Accessories</p>
+                        <li>
+                            <p>Support</p>
+                    </ul>
+                </div>
+                <ul class="header-nav-m" data-visible="true">
+                    <li class="header-nav-m-toggle">
+                        <button class="header-nav-m-toggle-button" aria-controls="header-nav-m-box" aria-expanded="false">
+                            <div class="header-nav-m-toggle-button-line-1"></div>
+                            <div class="header-nav-m-toggle-button-line-2"></div>
+                        </button>
+                    </li>
+                    <li class="header-nav-m-logo flex-center">
+                        <img src="./img/apple-l.png" class="header-nav-m-logo-img" />
+                    </li>
+                    <li class="header-nav-m-chart flex-center">
+                        <img src="./img/bag-l.png" class="header-nav-m-chart-img" />
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="second-header-nav-m-box" class="second-header-nav-m-box" data-visible="false">
+            <div class="second-header-nav-m-box-list">
+                <ul class="second-header-nav-m-box-list-ul">
+                    <li>
+                        <p class="nborder" style="color:var(--clr-black2);">Overview</p>
+                    <li>
+                        <p>Switching to iPhone</p>
+                    <li>
+                        <p>Tech Specs</p>
                 </ul>
             </div>
-            <ul class="header-nav-m" data-visible="true">
-                <li class="header-nav-m-toggle">
-                    <button class="header-nav-m-toggle-button" aria-controls="header-nav-m-box" aria-expanded="false">
-                        <div class="header-nav-m-toggle-button-line-1"></div>
-                        <div class="header-nav-m-toggle-button-line-2"></div>
-                    </button>
-                </li>
-                <li class="header-nav-m-logo flex-center">
-                    <img src="./img/apple-l.png" class="header-nav-m-logo-img" />
-                </li>
-                <li class="header-nav-m-chart flex-center">
-                    <img src="./img/bag-l.png" class="header-nav-m-chart-img" />
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="second-header-nav-m-box" class="second-header-nav-m-box" data-visible="false">
-        <div class="second-header-nav-m-box-list">
-            <ul class="second-header-nav-m-box-list-ul">
-                <li>
-                    <p class="nborder" style="color:var(--clr-black2);">Overview</p>
-                <li>
-                    <p>Switching to iPhone</p>
-                <li>
-                    <p>Tech Specs</p>
-            </ul>
         </div>
-    </div>
-    <section class="second-header flex">
-        <nav>
-            <div class="second-header-nav flex-center">
-                <div class="second-header-nav-title">
-                    <p>iPhone 13 Pro</p>
+        <section class="second-header flex">
+            <nav>
+                <div class="second-header-nav flex-center">
+                    <div class="second-header-nav-title">
+                        <p>iPhone 13 Pro</p>
+                    </div>
+                    <div class="second-header-nav-items">
+                        <button class="second-header-nav-m-toggle" aria-controls="second-header-nav-m-box" aria-expanded="false"">
+                            <div class="second-header-nav-m-toggle-arrow"></div>
+                        </button>
+                        <ul class="second-header-nav-items-ul flex gap">
+                            <li>
+                                <p style="color:var(--clr-black2);">Overview</p>
+                            <li>
+                                <p>Switching to iPhone</p>
+                            <li>
+                                <p>Tech Specs</p>
+                        </ul>
+                        <button class="second-header-nav-items-buy">
+                            Buy
+                        </button>
+                    </div>
                 </div>
-                <div class="second-header-nav-items">
-                    <button class="second-header-nav-m-toggle" aria-controls="second-header-nav-m-box" aria-expanded="false"">
-                        <div class="second-header-nav-m-toggle-arrow"></div>
-                    </button>
-                    <ul class="second-header-nav-items-ul flex gap">
-                        <li>
-                            <p style="color:var(--clr-black2);">Overview</p>
-                        <li>
-                            <p>Switching to iPhone</p>
-                        <li>
-                            <p>Tech Specs</p>
-                    </ul>
-                    <button class="second-header-nav-items-buy">
-                        Buy
-                    </button>
-                </div>
+            </nav>
+        </section>
+
+        <section>
+            <div class="deal">
+                <p class="deal-p">Save on your new iPhone with special carrier deals at Apple. <a href="https://www.apple.com/shop/buy-iphone/carrier-offers" class="p_link"><span class="p_link">Find your deal</span><span class="p_after"></span></a></p>
             </div>
-        </nav>
-    </section>
+        </section>
 
-    <section>
-        <div class="deal">
-            <p class="deal-p">Save on your new iPhone with special carrier deals at Apple. <a href="https://www.apple.com/shop/buy-iphone/carrier-offers" class="p_link"><span class="p_link">Find your deal</span><span class="p_after"></span></a></p>
-        </div>
-    </section>
-
-    <section>
-        <div class="main">
-            <div class="main-home">
-                <div class="main-home-content">
-                    <h1 class="main-home-content-title">iPhone 13 Pro</h1>
-                    <p class="main-home-content-subtitle">Oh. So. Pro.</p>
+        <section>
+            <!--<div class="main">
+                <div class="main-video">
+                    <video id="main-video" autoplay muted preload="auto" src="https://www.apple.com/105/media/us/iphone-13-pro/2021/404b23a8-f9c5-466c-b0e6-3d36705b959d/anim/hero/large.mp4"></video>
                 </div>
-                <!--<div class="main-home-large">
-                    <video id="main-home-large-video" autoplay muted preload="auto" src="https://www.apple.com/105/media/us/iphone-13-pro/2021/404b23a8-f9c5-466c-b0e6-3d36705b959d/anim/hero/xlarge.mp4"></video>
-                    <div class="main-home-large-background"></div>
-                </div>-->
-            </div>
-        </div>
-    </section>
+                <div class="main-background"></div>
+                <div class="main-home flex">
+                    <div class="main-home-content">
+                        <h1 class="main-home-content-title">iPhone 13 Pro</h1>
+                        <p class="main-home-content-subtitle">Oh. So. Pro.</p>
+                    </div>
+                </div>
+            </div>-->
+        </section>
 
-</body>
+    </body>
 </html>
