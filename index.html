@@ -1,181 +1,323 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/pre-css.css">
-        <link rel="stylesheet" href="./css/header-css.css">
-        <link rel="stylesheet" href="./css/second-header-css.css">
-        <link rel="stylesheet" href="./css/deal.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/header.js" defer></script>
-        <script src="./js/deal.js" defer></script>
-        <script src="./js/main-title.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/main.css"></style>
+        <link rel="stylesheet" href="./css/navigation.css"></style>
+        <link rel="stylesheet" href="./css/navigation-mobile.css"></style>
+        <link rel="stylesheet" href="./css/menu.css"></style>
+        <link rel="stylesheet" href="./css/section.css"></style>
+        <link rel="stylesheet" href="./css/section-mobile.css"></style>
+        <link rel="stylesheet" href="./css/footer.css"></style>
+        <link rel="stylesheet" href="./css/footer-mobile.css"></style>
+        <link rel="stylesheet" href="./css/carousel.css"></style>
+        <script src="./js/scrollpointer.js" defer></script>
+        <script src="./js/menu.js" defer></script>
+        <script src="./js/carousel.js" defer></script>
+        <script src="./js/form.js" defer></script>
     </head>
     <body>
-
-        <header class="header flex">
-            <nav>
-                <!--desktop nav-->
-                <ul class="header-nav gap flex">
-                    <li class="header-nav-logo flex-center">
-                        <img src="./img/apple-l.png" class="header-nav-logo-img" />
-                    <li>
-                        <p>Store</p> 
-                    <li>
-                        <p>Mac</p>
-                    <li>
-                        <p>iPad</p>
-                    <li>
-                        <p>iPhone</p>
-                    <li>
-                        <p>Watch</p>
-                    <li>
-                        <p>AirPods</p>
-                    <li>
-                        <p>TV & Home</p>
-                    <li>
-                        <p>Only on Apple</p>
-                    <li>
-                        <p>Accessories</p>
-                    <li>
-                        <p>Support</p>
-                    <li class="header-nav-search flex-center">
-                        <img src="./img/loupe-l.png" class="header-nav-search-img" />
-                    <li class="header-nav-chart flex-center">
-                        <img src="./img/bag-l.png" class="header-nav-chart-img" />
-                </ul>
-
-
-                <!--mobile nav-->
-                <div id="header-nav-m-box" class="header-nav-m-box" data-visible="false">
-                    <div class="header-nav-m-bg"></div>
-                    <div class="header-nav-m-box-result">
-                        <hr>
-                        <div class="header-nav-m-box-result-container">
-                            <p class="header-nav-m-box-result-container-title">Quick Links</p>
-                            <ul class="header-nav-m-box-result-container-list">
-                                <li class="nborder">
-                                    <p>Res1</p>
-                                <li>
-                                    <p>Res1</p>
-                                <li>
-                                    <p>Res1</p>
+        <section id="navigation">
+            <div class="navigation-box">
+                <div class="navigation-box-center">
+                    <a href="#navigation">
+                        <div class="navigation-box-center-logo">
+                            <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
+                                <title>SpaceX Logo</title>
+                                <g class="letter_s">
+                                <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+                                c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"></path>
+                                </g>
+                                <g class="letter_p">
+                                <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+                                c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"></path>
+                                </g>
+                                <g class="letter_a">
+                                <polygon class="fill-white" points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"></polygon>
+                                </g>
+                                <g class="letter_c">
+                                <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+                                c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"></path>
+                                </g>
+                                <g class="letter_e">
+                                <polygon class="fill-white" points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"></polygon>
+                                <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"></rect>
+                                </g>
+                                <g class="letter_x">
+                                <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"></path>
+                                <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"></path>
+                                </g>
+                                <g class="letter_swoosh">
+                                <path class="fill-white" d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="navigation-box-center-header">
+                        <header>
+                            <ul>
+                                <li><a href="#section0">NILESAT 301</a></li>
+                                <li><a href="#section1">CREW-3</a></li>
+                                <li><a href="#section2">Starlink mission</a></li>
+                                <li><a href="#section3">Starship update</a></li>
+                                <li><a href="#section4">Starship on moon</a></li>
+                            </ul>
+                        </header>
+                    </div>
+                </div>
+                <div class="navigation-box-side">
+                    <ul class="shop">
+                        <li> 
+                            <a href="https://shop.spacex.com/">
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-background"></div>
+                    <div id="menu" class="menu" data-visible="false">
+                        <div class="menu-navigation">
+                            <ul id="nav-links">
+                                <li class="nav-item mobile" aria-hidden="true"><a href="#section0">NILESAT 301</a></li>
+                                <li class="nav-item mobile" aria-hidden="true"><a href="#section1">CREW-3</a></li>
+                                <li class="nav-item mobile" aria-hidden="true"><a href="#section2">Starlink mission</a></li>
+                                <li class="nav-item mobile" aria-hidden="true"><a href="#section3">Starship update</a></li>
+                                <li class="nav-item mobile" aria-hidden="true"><a href="#section4">Starship on moon</a></li>
+                                <li class="nav-item" aria-hidden="true"><a href="https://www.spacex.com/mission/">Mission</a></li>
+                                <li class="nav-item" aria-hidden="true"><a href="https://www.spacex.com/launches/">Launches</a></li>
+                                <li class="nav-item" aria-hidden="true"><a href="https://www.spacex.com/careers/">Careers</a></li>
+                                <li class="nav-item" aria-hidden="true"><a href="https://www.spacex.com/updates/">Updates</a></li>
+                                <li class="nav-item" aria-hidden="true"><a href="https://shop.spacex.com/">Shop</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="header-nav-m-box-bar flex-center">
-                        <div class="header-nav-m-box-bar-search">
-                            <div class="header-nav-m-box-bar-search-cancel flex-center">
-                                <p>Cancel</p>
+                    <button class="hamburger" aria-controls="menu" aria-expanded="false">
+                        <div id="bar1" class="bar b1"></div>
+                        <div id="bar2" class="bar b2"></div>
+                        <div id="bar3" class="bar b3"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="section0">
+            <div class="section-box section0-bg">
+                <div class="section-box-center">
+                    <div class="section-box-center-content">
+                        <h4>recent mission</h4>
+                        <h2>nilesat 301 mission</h2>
+                        <a class="section-button" href="https://www.spacex.com/launches/nilesat-301/">
+                            <div class="section-button-hover"></div>
+                            <span class="section-button-span">rewatch</span>
+                        </a>
+                    </div>
+                    <div class="section-scroller">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section1">
+            <div class="section-box section1-bg">
+                <div class="section-box-center align">
+                    <div class="section-box-center-content crew">
+                        <h1>CREW-3</h1>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-item-box">
+                                        <div class="carousel-item-box-center">
+                                            <div class="carousel-item-box-center-img">
+                                                <img class="carousel-img" src="https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/portraits/nasa-astronaut-raja-chari.jpg"/>
+                                            </div>
+                                            <div class="carousel-item-box-center-desc">
+                                                <h1>Raja Chari</h1>
+                                                <h5>NASA Astronaut</h5>
+                                                <hr>
+                                                <p>Awarded the Defense Meritorious Service Medal, the Meritorious Service Medal, the Aerial Achievement Medal, the Air Force Commendation Medal, the Air Force Achievement Medal, an Iraq Campaign Medal, a Korean Defense Service Medal and the Nuclear Deterrence Operations Service Medal.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-box">
+                                        <div class="carousel-item-box-center">
+                                            <div class="carousel-item-box-center-img">
+                                                <img class="carousel-img" src="https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/portraits/nasa-astronaut-tom-marshburn.jpg"/>
+                                            </div>
+                                            <div class="carousel-item-box-center-desc">
+                                                <h1>Tom Marshburn</h1>
+                                                <h5>NASA Astronaut</h5>
+                                                <hr>
+                                                <p>NASA Superior Achievement Award, 1998. Space and Life Sciences Division Special Space Flight Achievement Award, 2003 and 2004. Lyndon B. Johnson Space Center Superior Achievement Award, January 2004.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-box">
+                                        <div class="carousel-item-box-center">
+                                            <div class="carousel-item-box-center-img">
+                                                <img class="carousel-img" src="https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/portraits/nasa-astronaut-kayla-barron.jpg"/>
+                                            </div>
+                                            <div class="carousel-item-box-center-desc">
+                                                <h1>Kayla Barron</h1>
+                                                <h5>NASA Astronaut</h5>
+                                                <hr>
+                                                <p>Awarded the Navy and Marine Corps Commendation Medal, Navy and Marine Corps Achievement Medal, and various unit commendations. Trident Scholar and Distinguished Graduate, U.S. Naval Academy. Gates Cambridge Scholar.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-box">
+                                        <div class="carousel-item-box-center">
+                                            <div class="carousel-item-box-center-img">
+                                                <img class="carousel-img" src="https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/portraits/esa-astronaut-matthias-maurer.jpg"/>
+                                            </div>
+                                            <div class="carousel-item-box-center-desc">
+                                                <h1>Matthias Maurer</h1>
+                                                <h5>ESA Astronaut</h5>
+                                                <hr>
+                                                <p>Matthias Maurer was born in Sankt Wendel (Saarland), Germany, on 18 March 1970. He joined the ESA astronaut corps in July 2015 and returned from his first mission to the International Space Station, known as Cosmic Kiss, in May 2022.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="header-nav-m-box-bar-search-searchbar">
-                                <img src="./img/loupe-l.png" class="header-nav-m-box-bar-search-searchbar-loupe-img" />
-                                <input class="header-nav-m-box-bar-search-searchbar-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" role="combobox" aria-autocomplete="list">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="section-box-center-content-button">
+                            <a class="section-button" href="https://www.spacex.com/launches/crew-3-return/">
+                                <div class="section-button-hover"></div>
+                                <span class="section-button-span">rewatch</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-scroller">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="section-box section2-bg">
+                <div class="section-box-center">
+                    <div class="section-box-center-content">
+                        <h4>recent launch</h4>
+                        <h2>starlink mission</h2>
+                        <a class="section-button" href="https://www.spacex.com/launches/sl4-18/">
+                            <div class="section-button-hover"></div>
+                            <span class="section-button-span">rewatch</span>
+                        </a>
+                    </div>
+                    <div class="section-scroller">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="section-box section3-bg">
+                <div class="section-box-center">
+                    <div class="section-box-center-content">
+                        <h2>Starship update</h2>
+                        <a class="section-button" href="https://www.spacex.com/updates/#starship-update">
+                            <div class="section-button-hover"></div>
+                            <span class="section-button-span">rewatch</span>
+                        </a>
+                    </div>
+                    <div class="section-scroller">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="section-box section4-bg">
+                <div class="section-box-center">
+                    <div class="section-box-center-content">
+                        <h2>Starship to land NASA astronauts on the moon</h2>
+                        <a class="section-button" href="https://www.spacex.com/updates/#starship-moon-announcement">
+                            <div class="section-button-hover"></div>
+                            <span class="section-button-span">rewatch</span>
+                        </a>
+                    </div>
+                    <div class="section-scroller">
+                        <svg width="30px" height="20px">
+                            <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer-box">
+                <p>SUPPORT US</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="cdname" class="form-label">Name on credit card you stole</label>
+                        <input type="name" class="form-control" id="cdname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cdnumber" class="form-label">This looong credit card number</label>
+                        <input type="number" class="form-control" id="cdnumber" min="1000000000000000" max="9999999999999999" required>
+                        <p class="form-number">CARD NUMBER HAS 16 DIGITS</p>
+                    </div>
+                    <div class="magic">
+                        <div class="mb-3 cvv">
+                            <label for="cdmagic" class="form-label">Magic 3 numbers from back side</label>
+                            <div class="magicbox">
+                                <input type="number" class="form-control" id="cdmagic" min="0" max="9" required>
+                                <input type="number" class="form-control" id="cdmagic" min="0" max="9" required>
+                                <input type="number" class="form-control" id="cdmagic" min="0" max="9" required>
+                                <p class="form-magic">It is impossible - your number is not between 000-999</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 date">
+                            <label for="cddate" class="form-label">Date is required also</label>
+                            <div class="datebox">
+                                <input type="number" class="form-control" id="cddate" min="0" max="1" required>
+                                <input type="number" class="form-control" id="cddate" min="0" max="9" required>
+                                <p style="font-size: 25px;margin:0;padding:0;">/</p>
+                                <input type="number" class="form-control" id="cddate" min="0" max="9" required>
+                                <input type="number" class="form-control" id="cddate" min="0" max="9" required>
+                                <p class="form-date">Something is no yes with your date</p>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <ul class="header-nav-m-box-items flex-center">
-                        <li class="nborder">
-                            <p>Store</p>
-                        <li>
-                            <p>Mac</p>
-                        <li>
-                            <p>iPad</p>
-                        <li>
-                            <p>iPhone</p>
-                        <li>
-                            <p>Watch</p>
-                        <li>
-                            <p>AirPods</p>
-                        <li>
-                            <p>TV & Home</p>
-                        <li>
-                            <p>Only on Apple</p>
-                        <li>
-                            <p>Accessories</p>
-                        <li>
-                            <p>Support</p>
-                    </ul>
-                </div>
-                <ul class="header-nav-m" data-visible="true">
-                    <li class="header-nav-m-toggle">
-                        <button class="header-nav-m-toggle-button" aria-controls="header-nav-m-box" aria-expanded="false">
-                            <div class="header-nav-m-toggle-button-line-1"></div>
-                            <div class="header-nav-m-toggle-button-line-2"></div>
-                        </button>
-                    </li>
-                    <li class="header-nav-m-logo flex-center">
-                        <img src="./img/apple-l.png" class="header-nav-m-logo-img" />
-                    </li>
-                    <li class="header-nav-m-chart flex-center">
-                        <img src="./img/bag-l.png" class="header-nav-m-chart-img" />
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="second-header-nav-m-box" class="second-header-nav-m-box" data-visible="false">
-            <div class="second-header-nav-m-box-list">
-                <ul class="second-header-nav-m-box-list-ul">
-                    <li>
-                        <p class="nborder" style="color:var(--clr-black2);">Overview</p>
-                    <li>
-                        <p>Switching to iPhone</p>
-                    <li>
-                        <p>Tech Specs</p>
-                </ul>
-            </div>
-        </div>
-        <section class="second-header flex">
-            <nav>
-                <div class="second-header-nav flex-center">
-                    <div class="second-header-nav-title">
-                        <p>iPhone 13 Pro</p>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">Is this useless form?</label>
                     </div>
-                    <div class="second-header-nav-items">
-                        <button class="second-header-nav-m-toggle" aria-controls="second-header-nav-m-box" aria-expanded="false"">
-                            <div class="second-header-nav-m-toggle-arrow"></div>
-                        </button>
-                        <ul class="second-header-nav-items-ul flex gap">
-                            <li>
-                                <p style="color:var(--clr-black2);">Overview</p>
-                            <li>
-                                <p>Switching to iPhone</p>
-                            <li>
-                                <p>Tech Specs</p>
-                        </ul>
-                        <button class="second-header-nav-items-buy">
-                            Buy
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </section>
-
-        <section>
-            <div class="deal">
-                <p class="deal-p">Save on your new iPhone with special carrier deals at Apple. <a href="https://www.apple.com/shop/buy-iphone/carrier-offers" class="p_link"><span class="p_link">Find your deal</span><span class="p_after"></span></a></p>
+                    <button type="submit" class="btn btn-primary mid">Submit</button>
+                </form>
+                <p>
+                    <span><a href="https://github.com/ubbebs">ubbebs © 2022</a></span>
+                    <a href="https://twitter.com/spacex" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/spacex">youtube</a>
+                    <a href="https://www.instagram.com/spacex/">instagram</a>
+                    <a href="https://www.flickr.com/photos/spacex">flickr</a>
+                    <a href="https://www.linkedin.com/company/spacex">linkedin</a>
+                    <a href="https://www.spacex.com/media/privacy_policy_spacex.pdf">privacy policy</a>
+                    <a href="https://www.spacex.com/supplier/">suppliers</a>
+                </p>
             </div>
         </section>
-
-        <section>
-            <div class="main">
-                <div class="main-video">
-                    <video id="main-video" autoplay muted preload="auto" src="https://www.apple.com/105/media/us/iphone-13-pro/2021/404b23a8-f9c5-466c-b0e6-3d36705b959d/anim/hero/large.mp4"></video>
-                </div>
-                <div class="main-background"></div>
-                <div class="main-home flex">
-                    <div class="main-home-content">
-                        <h1 class="main-home-content-title">iPhone 13 Pro</h1>
-                        <p class="main-home-content-subtitle">Oh. So. Pro.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </body>
 </html>

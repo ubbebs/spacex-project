@@ -1,0 +1,148 @@
+.section-box {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section0-bg {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/nilesat-301/post-launch/Homepage_Desktop.webp");
+}
+
+.section1-bg {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/pre-undocking/Homepage_Desktop.webp");
+}
+
+.section2-bg {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/sl4-18/post-launch/Homepage_Desktop.webp");
+}
+
+.section3-bg {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/starship-update/S20_Chopstick_Stack_Desktop.webp");
+}
+
+.section4-bg {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2021/hls-resized-2.webp");
+}
+
+.section-box-center {
+    position: relative;
+    height: 100%;
+    width: min(100%, 1400px);
+    margin: 0 auto;
+}
+
+.section-box-center-content {
+    position: absolute;
+    bottom: 15%;
+    left: 50px;
+    width: min(50%, 520px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.section-box-center-content h2 {
+    font-size: 48px;
+    font-family: d-din-b, sans-serif;
+    margin: 0 52px 0 0;
+    font-stretch: 100%;
+    text-shadow: 0 0 2px #555;
+}
+
+.section-box-center-content h4 {
+    font-size: 20px;
+    font-family: d-din, sans-serif;
+    margin: 0;
+    line-height: 38px;
+    font-stretch: 100%;
+}
+
+.section-box > .align  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.align > .section-box-center-content {
+    position: static;
+    width: 100%;
+}
+
+.crew > h1 {
+    width: 75%;
+    font-family: d-din-b, sans-serif;
+    margin: 0 auto;
+}
+
+.section-button {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 130px;
+    margin-top: 30px;
+    padding: 0 15px 0 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.section-button-span {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: d-din-b, sans-serif;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.section-button:hover .section-button-span {
+    color: black;
+}
+
+.section-button-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    transform: scale3d(1, 0, 1);
+    transform-origin: top center;
+    transition: transform 0.3s;
+}
+
+.section-button:hover .section-button-hover {
+    transform: scale3d(1, 1, 1);
+    transform-origin: bottom center;
+}
+
+.section-box-center-content-button {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section-scroller {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 30px;
+    width: 20px;
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 1;
+    transition: opacity 1s, transform 1s;
+}
+
+.section-scroller svg path {
+    fill: none;
+}

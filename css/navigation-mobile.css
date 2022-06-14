@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1100px) {
+    .navigation-box-center-header li {
+        margin: 0px 0px 0px 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 960px) {
+    .navigation-box-center-header, .shop {
+        display: none;
+    }
+
+    .navigation-box-center-logo {
+        margin: 0 auto;
+        top: 14px;
+        left: 0;
+        right: 0;
+    }
+
+    .navigation-box-center-logo img {
+        width: 150px;
+        margin-left: 15px;
+    }
+
+    .navigation-box-side {
+        top: 22px;
+    }
+
+    .navigation-box-side p {
+        display: none;
+    }
+
+    .nav-items {
+        display: block!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation-box-side {
+        right: 20px;
+    }
+}

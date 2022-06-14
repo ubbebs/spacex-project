@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1200px) {
+    .section-box-center-content {
+        width: min(50%, 420px);
+    }
+
+    #section1 .section-box-center-content {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .align > .section-box-center-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .crew > h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-box-center-content-button {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-box-center-content {
+        bottom: 10%;
+        left: 20px;
+        right: 20px;
+        width: auto;
+    }
+
+    .section-box-center-content h2 {
+        font-size: 36px;
+    }
+    
+    .section-box-center-content h4 {
+        font-size: 16px;
+    }
+
+    .section-button {
+        margin-top: 15px;
+    }
+
+    #section1 .section-box-center-content {
+        bottom: auto;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,138 @@
+#navigation {
+    font-family: d-din-b, sans-serif;
+    font-weight: 600;
+}
+
+.navigation-box {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 14px;
+}
+
+.navigation-box-center {
+    height: 100%;
+    width: min(100%, 1400px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.navigation-box-center-logo {
+    position: absolute;
+    top: 32px;
+    left: 50px;
+    height: 26px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-box-center-logo svg {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation-box-center-logo g > * {
+    fill: white;
+    color: white;
+    z-index: 500;
+}
+
+.navigation-box-center-header {
+    display: static;
+    position: absolute;
+    top: 38px;
+    left: 285px;
+}
+
+.navigation-box-center-header ul , .navigation-box-side ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-box-center-header li, .navigation-box-side li {
+    line-height: 26px;
+    float: left;
+    margin: 0px 12px 0px 12px;
+    text-transform: uppercase;
+}
+
+.navigation-box-center-header li > a, .navigation-box-side li > a {
+    display: block;
+    position: relative;
+}
+
+.navigation-box-center-header header > ul > li > a::after, .navigation-box-side header > ul > li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    transform: scale3d(0, 1, 1);
+    transform-origin: right center;
+    transition: transform 0.3s;
+}
+
+.navigation-box-center-header header > ul > li > a:hover::after, .navigation-box-side header > ul > li > a:hover::after {
+    transform: scale3d(1, 1, 1);
+    transform-origin: left center;
+}
+
+.navigation-box-side {
+    position: absolute;
+    top: 38px;
+    right: 50px;
+    height: 26px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* SIDE BAR */
+
+button {
+    background: none;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+
+.hamburger {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    font-size: 14;
+    z-index: 55;
+}
+
+.bar {
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.b1 {
+    top: 3px;
+}
+
+.b2 {
+    top: 7px;
+}
+
+.b3 {
+    top: 11px;
+}

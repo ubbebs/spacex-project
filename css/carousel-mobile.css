@@ -1,0 +1,36 @@
+@media only screen and (max-width: 960px) {
+    .carousel-item {
+        height: max(auto, 500px);
+        max-height: 700px;
+    }
+
+    .carousel-item-box {
+        height: auto;
+    }
+
+    .carousel-item-box-center {
+        flex-direction: column;
+    }
+
+    .carousel-item-box-center-img {
+        height: 150px;
+        max-width: none;
+        margin-bottom: 15px;
+    }
+
+    .carousel-item-box-center-desc {
+        height: auto;
+        max-width: none;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .carousel-item-box-center-desc > p {
+        font-family: d-din, sans-serif;
+        font-size: 14px;
+    }
+
+    .carousel-item-box-center-desc > h5, h1 {
+        text-align: center;
+    }
+}
